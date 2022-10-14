@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5sy-HY-2UA">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="G2f-ws-0hX">
+            <objects>
+                <viewController id="5sy-HY-2UA" customClass="ViewController" customModule="BugLifeDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fyz-WR-IWh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qHT-4f-MeB">
+                                <rect key="frame" x="0.0" y="812" width="414" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="1j9-04-wcA"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="t6p-a1-EpM">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="zW8-Bw-nqo"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rf9-Mx-d20">
+                                <rect key="frame" x="0.0" y="0.0" width="84" height="896"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="84" id="Nb6-88-YoI"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6hO-iV-Zx5">
+                                <rect key="frame" x="330" y="0.0" width="84" height="896"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="84" id="HhM-9U-5p9"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KWm-HB-1xm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="rf9-Mx-d20" secondAttribute="bottom" id="9h2-p7-nKY"/>
+                            <constraint firstItem="rf9-Mx-d20" firstAttribute="leading" secondItem="fyz-WR-IWh" secondAttribute="leading" id="Bnl-Dy-ben"/>
+                            <constraint firstItem="qHT-4f-MeB" firstAttribute="leading" secondItem="KWm-HB-1xm" secondAttribute="leading" id="Lz6-7B-E1O"/>
+                            <constraint firstItem="KWm-HB-1xm" firstAttribute="trailing" secondItem="qHT-4f-MeB" secondAttribute="trailing" id="ZW1-Zn-G2w"/>
+                            <constraint firstItem="t6p-a1-EpM" firstAttribute="leading" secondItem="KWm-HB-1xm" secondAttribute="leading" id="ZcK-3k-SMB"/>
+                            <constraint firstAttribute="bottom" secondItem="6hO-iV-Zx5" secondAttribute="bottom" id="aMi-Yl-QnU"/>
+                            <constraint firstItem="6hO-iV-Zx5" firstAttribute="top" secondItem="fyz-WR-IWh" secondAttribute="top" id="f92-Kd-HqV"/>
+                            <constraint firstAttribute="trailing" secondItem="6hO-iV-Zx5" secondAttribute="trailing" id="fQY-n0-vyE"/>
+                            <constraint firstItem="t6p-a1-EpM" firstAttribute="top" secondItem="fyz-WR-IWh" secondAttribute="top" id="hdU-Bw-7ie"/>
+                            <constraint firstItem="KWm-HB-1xm" firstAttribute="trailing" secondItem="t6p-a1-EpM" secondAttribute="trailing" id="kye-5K-j9h"/>
+                            <constraint firstItem="rf9-Mx-d20" firstAttribute="top" secondItem="fyz-WR-IWh" secondAttribute="top" id="q8D-sF-ax6"/>
+                            <constraint firstAttribute="bottom" secondItem="qHT-4f-MeB" secondAttribute="bottom" id="wBi-jS-cTV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomView" destination="qHT-4f-MeB" id="I0k-iZ-zzI"/>
+                        <outlet property="leftView" destination="rf9-Mx-d20" id="IHp-SS-KcW"/>
+                        <outlet property="rightView" destination="6hO-iV-Zx5" id="CYN-MM-Qeh"/>
+                        <outlet property="topView" destination="t6p-a1-EpM" id="BFC-ZN-pQr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T9F-rk-Kcl" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="39.508928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
